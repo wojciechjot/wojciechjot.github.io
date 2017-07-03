@@ -70,12 +70,12 @@
                     if(window.innerWidth > 862 && window.innerWidth < 1280)
                     {
                         change("none", "0", "0px", "2550px", "2300px", "load more", 0);
-                        shift(630, 680, 730);
+                        shift(580, 680, 730);
                     }
                     else
                     {
                         smaller();
-                        shift(630, 680, 730);
+                        shift(580, 680, 780);
                     }
                     //About
                    
@@ -86,12 +86,12 @@
                     if(window.innerWidth > 862 && window.innerWidth < 1280)
                     {
                         change("none", "0", "0px", "2550px", "2300px", "load more", 0);
-                        shift(950, 1000, 1050);
+                        shift(900, 1000, 1100);
                     }
                     else
                     {
                         smaller();
-                        shift(950, 1000, 1050);
+                        shift(900, 1000, 1100);
                     }
                     //Works
                    
@@ -101,12 +101,12 @@
                     if(window.innerWidth > 862 && window.innerWidth < 1280)
                     {
                         change("none", "0", "0px", "2550px", "2300px", "load more", 0);
-                        shift(4850, 4900, 4950);
+                        shift(4800, 4900, 5000);
                     }
                     else
                     {
                         smaller();
-                        shift(3820, 3870, 3920);
+                        shift(3770, 3870, 3970);
                     }
                     //Contact
                     
@@ -116,12 +116,12 @@
                     if(window.innerWidth > 862 && window.innerWidth < 1280)
                     {
                         change("none", "0", "0px", "2550px", "2300px", "load more", 0);
-                        shift(4450, 4500, 4550);
+                        shift(4400, 4500, 4600);
                     }
                     else
                     {
                         smaller();
-                        shift(3400, 3450, 3500);
+                        shift(3350, 3450, 3550);
                     }
                     //Follow me
                     
