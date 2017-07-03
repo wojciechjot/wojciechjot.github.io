@@ -1,5 +1,6 @@
 (function (){
-
+    
+    var body = document.querySelector("body");
     var nav = document.querySelector("nav");  
     var hamburgerIcon =document.querySelector("#hamburgerIcon");
     var hamburgerMenu = document.querySelector("#hamburgerMenu");
@@ -8,6 +9,7 @@
     var rightCounter = -200;
     var rightString;
     var right;
+    var isHamburger = false;
 
 
     window.addEventListener("scroll", function(e)
@@ -173,6 +175,8 @@
         
     }
     
+    
+    
     hamburgerIcon.addEventListener("click", function(e)
     {
         hamburgerIcon.style.display = "none";
@@ -187,6 +191,19 @@
         hamburgerIcon.style.display = "block";
         hideHamburger();
         
+        
+        
+    }, false);
+    
+    body.addEventListener("click", function()
+    {
+       if(isHamburger === true)
+           {
+               hideHamburger();
+               hamburgerIcon.style.display = "block";
+               isHamburger = false;
+           }
+        
     }, false);
 
     function showHamburger()
@@ -200,6 +217,12 @@
                 right = rightCounter + "px";
                 hamburgerMenu.style.right = right;
                 setTimeout(showHamburger, 1); 
+            }
+        
+        if(rightCounter === 0)
+            {
+                      
+                isHamburger = true;
             }
         
     }
