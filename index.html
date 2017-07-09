@@ -11,11 +11,11 @@
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/media-queries.css">
     
-    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
-    <link rel="manifest" href="manifest.json">
-    <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
+    <link rel="manifest" href="favicons/manifest.json">
+    <link rel="mask-icon" href="favicons/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="theme-color" content="#ffffff">
     
 </head>
@@ -27,9 +27,9 @@
         <div id="hamburgerMenu">
             <ul>
                 <li><a href="#about">about&nbsp;me</a></li>
-                <li><a href="#">works</a></li>
-                <li><a href="#">contact</a></li>
-                <li><a href="#">follow&nbsp;me</a></li> 
+                <li><a href="#works">works</a></li>
+                <li><a href="#contact">contact</a></li>
+                <li><a href="#follow">follow&nbsp;me</a></li> 
             </ul>
         </div>
         <p>MariaAnna</p>
@@ -44,22 +44,22 @@
         <h2>Navigation</h2>
         <p>MariaAnna</p>
         <ul>
-            <li><a href="#">about&nbsp;me</a></li>
-            <li><a href="#">works</a></li>
-            <li><a href="#">contact</a></li>
-            <li><a href="#">follow&nbsp;me</a></li>
+            <li><a href="#about">about&nbsp;me</a></li>
+            <li><a href="#works">works</a></li>
+            <li><a href="#contact">contact</a></li>
+            <li><a href="#follow">follow&nbsp;me</a></li>
         </ul>
      </nav>
     
      <section>
-         <h2>About me</h2>
+         <h2 id="about">About me</h2>
         <p class="textHeader">a little bit about me</p>
         <span class="redLine"></span>
         <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim.</p>
      </section>
     
     <article>
-        <h2>Works</h2>
+        <h2 id="works">Works</h2>
         <p class="textHeader">works</p>
         <span class="redLine"></span>
         
@@ -190,7 +190,7 @@
     </article>
     
     <article>
-        <h2>Social bar</h2>
+        <h2 id="follow">Social bar</h2>
         <p class="textHeader">follow me</p>
         <span class="redLine"></span>
         <div class="socials">
@@ -202,8 +202,8 @@
          </div>
     </article>
     
-    <section>
-        <h2>Contact</h2>
+    <section class="sectionContact">
+        <h2 id="contact">Contact</h2>
         <p class="textHeader">contact me</p>
         <span class="redLine"></span>
         <p>Claritas est etiam processus dynamicus qui sequitur</p>
@@ -219,7 +219,7 @@
     </section>
    
     <footer>
-        <a href="#"><div class="arrowUp"></div></a>
+        <a href="#about"><div class="arrowUp"></div></a>
         <p>MariaAnna</p>
         <p>photography</p>
         <p>&copy Copyright 2014 MariaAnna</p>
@@ -227,8 +227,10 @@
 
 </div>
   
+    <script src="scripts/jquery-3.2.1.min.js"></script>
+    <script src="scripts/scroll.js"></script>
     <script src="scripts/corners.js"></script>  
-    <script src="scripts/goTo.js"></script> 
+    <script src="scripts/nav.js"></script> 
     <script src="scripts/circle.js"></script> 
     <script src="scripts/socials.js"></script>
     <script src="scripts/changeHeight.js"></script>
