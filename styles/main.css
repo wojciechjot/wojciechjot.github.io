@@ -23,6 +23,7 @@ h1,h2
 {
     position: absolute;
     left: -50000px;
+/*    top: -55px;*/
 }
 
 header
@@ -143,13 +144,6 @@ nav > ul:nth-child(3) li:hover
     border-bottom: solid 2px #d07c7c;
 }
 
-section:nth-of-type(1)
-{
-    height: 285px;
-    width: 100%;
-    padding-top: 140px;
-}
-
 .textHeader
 {
     font-family: PlayfairDisplay-Regular;
@@ -170,6 +164,18 @@ section:nth-of-type(1)
     display: block;
 }
 
+section:nth-of-type(1)
+{
+    height: 285px;
+    width: 100%;
+     padding-top: 140px;
+}
+
+section:nth-of-type(1) h2
+{
+    top: 745px;
+}
+
 section:nth-of-type(1)   p:nth-of-type(2)
 {
     width: 767px;
@@ -184,9 +190,16 @@ section:nth-of-type(1)   p:nth-of-type(2)
 
 article:nth-of-type(1)
 {
+    
     height: 1514px;
    /* height: 1909px;*/
     
+}
+
+article:nth-of-type(1) h2:first-of-type
+{
+    position: absolute;
+  top: 1050px;
 }
 
 #worksWrapper
@@ -497,6 +510,11 @@ article:nth-of-type(1)
     margin-left:auto;
     margin-right: auto;
 }
+
+#btn:hover
+{
+    cursor: pointer;
+}
     
 body > div > div:nth-child(7)
 {
@@ -575,7 +593,7 @@ section:nth-of-type(2) > div:nth-child(6)
     -moz-border-radius: 6px;
 	-webkit-border-radius: 6px;
 	border-radius: 6px;
-
+    cursor: pointer;
 }
 
 article:nth-of-type(2)
@@ -729,6 +747,11 @@ article:nth-of-type(3) > .textHeader
     background-position: 50% 50%;
     border-radius: 50%;
     border: 1px solid #ffffff;
+}
+
+.socials div:hover
+{
+    cursor: pointer;
 }
 
 .socials span
