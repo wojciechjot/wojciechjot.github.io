@@ -38,14 +38,14 @@ function changeHeight(e)
             if(window.innerWidth > 862 && window.innerWidth < 1280 )
             {
                 change("flex", "1", "800px", "3470px", "3195px", "hide", 1);
-                entry(200, 0, 0, "right");
-                entry(0-200, 0, 1, "left");
+                entry(200, 0, 0, "right", 0);
+                entry(0-200, 0, 1, "left", 0);
             }
         else if(window.innerWidth < 861)
             {
                 change("flex", "1", "800px", "3850px", "3550px", "hide", 1);
-                entry(200, 0, 0, "right");
-                entry(0-200, 0, 1, "left");
+                entry(200, 0, 0, "right", 0);
+                entry(0-200, 0, 1, "left", 0);
             }
         else
             {
@@ -57,11 +57,17 @@ function changeHeight(e)
         {
             if(window.innerWidth > 862 && window.innerWidth < 1280 )
                 {
-                    change("none", "0", "0px", "2550px", "2300px", "load more", 0);
+                  //  entry(0, 200, 0, "right");
+                  //  entry(0, 0-200, 1, "left");
+                    entry(0, 400, 0, "right", 1);
+                    entry(0 , 0-200, 1, "left", 1);
+                    /*change("none", "0", "0px", "2550px", "2300px", "load more", 0);*/
                 }
             else if(window.innerWidth < 861)
                 {
-                    change("none", "0", "0px", "3050px", "2720px", "load more", 0);
+                    entry(0, 400, 0, "right", 1);
+                    entry(0 , 0-200, 1, "left", 1);
+                    /*change("none", "0", "0px", "3050px", "2720px", "load more", 0);*/
                 }
             else
                 {
@@ -185,9 +191,10 @@ function change(display, opacity, addonHeight, articleHeight, wrapperHeight, tex
     
 }
 
-function entry(start, end, number, direction)
+function entry(start, end, number, direction, inOut)
 {
-    if(Math.abs(start) > end)
+     
+    if(Math.abs(start) > end && inOut === 0)
         {
            
             if(direction === "right")
@@ -196,12 +203,44 @@ function entry(start, end, number, direction)
                 }
             else
                 {
-                    start = start + 2;
+                     start = start + 2;
                 }
-           
             startString = start.toString() + "%";
             pics[number].style.marginRight = startString;
-            setTimeout(function(){entry(start, end, number, direction);}, 1); 
+            
+            
         }
+    
+    else if(inOut === 1 && Math.abs(start) < 410)
+        {
+        
+            if(direction === "right")
+                {
+                     start = start - 2;
+                }
+            else
+                {
+                    start = start + 2;
+                }
+         
+            startString = start.toString() + "%";
+            pics[number].style.marginRight = startString;
+        }
+
+           
+            setTimeout(function(){entry(start, end, number, direction, inOut);}, 1); 
+        
+    if(Math.abs(start) === 400)
+       {
+           if(window.innerWidth > 862 && window.innerWidth < 1280)
+               {
+                   change("none", "0", "0px", "2550px", "2300px", "load more", 0);
+               }
+           else
+               {
+                   change("none", "0", "0px", "3050px", "2720px", "load more", 0);
+               }
+            
+       }
         
 }
