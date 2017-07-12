@@ -34,7 +34,7 @@ function choicePic(number, width, height, padding, widthM, heightM, paddingM, co
                         
                         if(counter === 0)
                             {
-                                corners[i-1].style.animation = "animationBorder 0.3s linear";
+                                corners[i-1].style.animation = "animationBorder 1.5s linear";
                             }
                         else
                             {
