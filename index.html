@@ -3,9 +3,14 @@
 
 <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="My first website">
+    <meta name="keywords" content="HTML,CSS,JavaScript">
+    <meta name="author" content="Wojciech Januszek">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
     <title>Maria Anna photography</title>
+    
     <link rel="stylesheet" href="styles/reset.css">
     <link rel="stylesheet" href="styles/fonts.css">
     <link rel="stylesheet" href="styles/main.css">
@@ -51,7 +56,7 @@
         </ul>
      </nav>
     
-     <section>
+     <section tabindex="0">
          <h2 id="about">About me</h2>
         <p class="textHeader">a little bit about me</p>
         <span class="redLine"></span>
@@ -66,7 +71,7 @@
         <div id="worksWrapper">
             <div id="leftUp">
                 
-                <div class="type1">
+                <div class="type1" tabindex="0">
                     <div class="cornerBorder">
                         <div class="borderSpan">
                              <p class="upPara">nature</p>
@@ -77,7 +82,7 @@
                 </div>
                 
                 <div class="type2Wrapper">
-                    <div class="type2">
+                    <div class="type2" tabindex="0">
                         <div class="cornerBorder">
                             <div class="borderSpan">
                                  <p class="upPara">people</p>
@@ -86,7 +91,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="type2">
+                    <div class="type2" tabindex="0">
                         <div class="cornerBorder">
                             <div class="borderSpan">
                                 <p class="upPara">wedding</p>
@@ -98,7 +103,7 @@
                    
                 </div>
                 
-                <div class="type1">
+                <div class="type1" tabindex="0">
                     <div class="cornerBorder">
                         <div class="borderSpan">
                             <p class="upPara">architecture</p>
@@ -111,7 +116,7 @@
             </div>  
             
             <div id="rightDown">
-                 <div class="type3">
+                 <div class="type3" tabindex="0">
                      <div class="cornerBorder">
                         <div class="borderSpan">
                             <p class="upPara">urban</p>
@@ -120,7 +125,7 @@
                         </div>
                     </div>
                 </div>
-                 <div class="type4">
+                 <div class="type4" tabindex="0">
                      <div class="cornerBorder">
                         <div class="borderSpan">
                             <p class="upPara">animals</p>
@@ -134,7 +139,7 @@
             
             <div id="addonDown">
                 
-                <div class="type5">
+                <div class="type5" tabindex="0">
                     <div class="cornerBorder">
                         <div class="borderSpan">
                             <p class="upPara">cars</p>
@@ -144,7 +149,7 @@
                     </div>
                 </div>
                 
-                <div class="type6">
+                <div class="type6" tabindex="0">
                     <div class="cornerBorder">
                         <div class="borderSpan">
                             <p class="upPara">food</p>
@@ -160,11 +165,11 @@
             
         </div>
         
-        <div id = "btn"><p>load more</p></div>
+        <div id = "btn" tabindex="0"><p>load more</p></div>
         
     </article>
     
-    <section>
+    <section tabindex="0">
         <h2>My ideas</h2>
         <p class="textHeader">See the world through my lens</p>
         <span></span>
@@ -177,7 +182,7 @@
         </div>
     </section>
     
-    <article> <!-- video -->
+    <article tabindex="0"> <!-- video -->
         <h2>My video</h2>
         <div class="blackLine1"></div>
         <div class="playWrapper">
@@ -189,20 +194,20 @@
         <div class="blackLine2"></div> 
     </article>
     
-    <article>
+    <article tabindex="0">
         <h2 id="follow">Social bar</h2>
         <p class="textHeader">follow me</p>
         <span class="redLine"></span>
         <div class="socials">
-            <div class="pinterest"><span class="pinterestSpan"></span></div> 
-            <div class="instagram"><span class="instagramSpan"></span></div>
-            <div class="twitter"><span class="twitterSpan"></span></div>
-            <div class="google"><span class="googleSpan"></span></div>
-            <div class="tumblr"><span class="tumblrSpan"></span></div>
+            <div class="pinterest" tabindex="0"><span class="pinterestSpan"></span></div> 
+            <div class="instagram" tabindex="0"><span class="instagramSpan"></span></div>
+            <div class="twitter" tabindex="0"><span class="twitterSpan"></span></div>
+            <div class="google" tabindex="0"><span class="googleSpan"></span></div>
+            <div class="tumblr" tabindex="0"><span class="tumblrSpan"></span></div>
          </div>
     </article>
     
-    <section class="sectionContact">
+    <section class="sectionContact" tabindex="0">
         <h2 id="contact">Contact</h2>
         <p class="textHeader">contact me</p>
         <span class="redLine"></span>
@@ -210,7 +215,7 @@
         <form action="#" id="myForm" >
             <input type="text" name="your-name" placeholder="Your name*" data-error="Your name">
             <input type="email" name="your-email" placeholder="Your E-mail address*" data-error="Your E-mail address">
-            <textarea name="your-message" placeholder="Your Message" data-error="Your message"></textarea>
+            <textarea name="your-message" placeholder="Your Message*" data-error="Your message"></textarea>
             <div class="formWrapper">
                 <p>All fields marked with an asterisk (*) are required</p>
                 <button type="submit">SEND</button>
@@ -229,6 +234,7 @@
   
     <script src="scripts/jquery-3.2.1.min.js"></script>
     <script src="scripts/scroll.js"></script>
+    <script src="scripts/tab.js"></script>
     <script src="scripts/corners.js"></script>  
     <script src="scripts/nav.js"></script> 
     <script src="scripts/circle.js"></script> 
