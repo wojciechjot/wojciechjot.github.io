@@ -25,7 +25,7 @@
         var target = e.target;
         var circleArr = makeArray(circle);
         var indexCircle = circleArr.indexOf(target);
-
+        
         switch(indexCircle)
                 {
                     case 0:
@@ -87,8 +87,36 @@
     
     for(var i = 0; i < circle.length; i++)
     {
-        circle[i].onclick = changeCircle;
+        circle[i].addEventListener("click", changeCircle, false);
     }
+        for(var i = 0; i < circle.length; i++)
+    {
+       
+        circle[i].addEventListener("keydown", function(ev)
+        {
+            if(ev.keyCode === 13)
+                {
+                    changeCircle();
+                }
+        }, false);
+    }
+    
+   /* for(var i = 0; i < circle.length; i++)
+    {
+        circle[i].addEventListener("keydown", changeCircle, false);
+    }*/
+    
+    /*for(var i = 0; i < circle.length; i++)
+    {
+       
+        circle[i].addEventListener("keydown", function(e)
+        {
+            if(e.keyCode === 13)
+                {
+                    circle[i].activeElement.click(e);
+                }
+        }, false);
+    }*/
     
     
 }());
