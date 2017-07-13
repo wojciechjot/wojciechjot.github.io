@@ -58,7 +58,7 @@ function choicePic(number, width, height, padding, widthM, heightM, paddingM, co
             }
     }
 
-pic1.addEventListener("mouseover", function(e)
+pic1.addEventListener("mouseenter", function(e)
     {
         choicePic(1, "336px", "155px", "87px", "230px", "105px", "45px", 0);
     }, false);
@@ -68,7 +68,7 @@ pic1.addEventListener("mouseleave", function(e)
         choicePic(1, "204px", "73px", "5px", "180px", "65px", "5px", 1);
     }, false);
 
-pic2.addEventListener("mouseover", function(e)
+pic2.addEventListener("mouseenter", function(e)
     {
         choicePic(2, "336px", "155px", "87px", "230px", "105px", "45px", 0);
     }, false);
@@ -78,7 +78,7 @@ pic2.addEventListener("mouseleave", function(e)
         choicePic(2, "204px", "73px", "5px", "180px", "65px", "5px", 1);
     }, false);
 
-pic3.addEventListener("mouseover", function(e)
+pic3.addEventListener("mouseenter", function(e)
     {
         choicePic(3, "336px", "155px", "87px", "230px", "105px", "45px", 0);
     }, false);
@@ -88,7 +88,7 @@ pic3.addEventListener("mouseleave", function(e)
         choicePic(3, "204px", "73px", "5px", "180px", "65px", "5px", 1);
     }, false);
 
-pic4.addEventListener("mouseover", function(e)
+pic4.addEventListener("mouseenter", function(e)
     {
         choicePic(4, "336px", "155px", "87px", "230px", "105px", "45px", 0);
     }, false);
@@ -98,7 +98,7 @@ pic4.addEventListener("mouseleave", function(e)
         choicePic(4, "262px", "73px", "5px", "222px", "65px", "5px", 1);
     }, false);
 
-pic5.addEventListener("mouseover", function(e)
+pic5.addEventListener("mouseenter", function(e)
     {
         choicePic(5, "336px", "155px", "87px", "230px", "105px", "45px", 0);
     }, false);
@@ -108,7 +108,7 @@ pic5.addEventListener("mouseleave", function(e)
         choicePic(5, "204px", "73px", "5px", "180px", "65px", "5px", 1);
     }, false);
 
-pic6.addEventListener("mouseover", function(e)
+pic6.addEventListener("mouseenter", function(e)
     {
         choicePic(6, "336px", "155px", "87px", "230px", "105px", "45px", 0);
     }, false);
@@ -118,7 +118,7 @@ pic6.addEventListener("mouseleave", function(e)
         choicePic(6, "204px", "73px", "5px", "180px", "65px", "5px", 1);
     }, false);
 
-pic7.addEventListener("mouseover", function(e)
+pic7.addEventListener("mouseenter", function(e)
     {
         choicePic(7, "336px", "155px", "87px", "230px", "105px", "45px", 0);
     }, false);
@@ -128,7 +128,7 @@ pic7.addEventListener("mouseleave", function(e)
         choicePic(7, "204px", "73px", "5px", "180px", "65px", "5px", 1);
     }, false);
 
-pic8.addEventListener("mouseover", function(e)
+pic8.addEventListener("mouseenter", function(e)
     {
         choicePic(8, "336px", "155px", "87px", "230px", "105px", "45px", 0);
     }, false);

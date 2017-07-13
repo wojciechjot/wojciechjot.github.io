@@ -92,31 +92,13 @@
         for(var i = 0; i < circle.length; i++)
     {
        
-        circle[i].addEventListener("keydown", function(ev)
-        {
-            if(ev.keyCode === 13)
-                {
-                    changeCircle();
-                }
-        }, false);
-    }
-    
-   /* for(var i = 0; i < circle.length; i++)
-    {
-        circle[i].addEventListener("keydown", changeCircle, false);
-    }*/
-    
-    /*for(var i = 0; i < circle.length; i++)
-    {
-       
         circle[i].addEventListener("keydown", function(e)
         {
             if(e.keyCode === 13)
                 {
-                    circle[i].activeElement.click(e);
+                    changeCircle(e);
                 }
         }, false);
-    }*/
-    
+    }
     
 }());

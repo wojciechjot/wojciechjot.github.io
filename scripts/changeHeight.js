@@ -31,6 +31,14 @@ var startString;
 
 btn.addEventListener("click", changeHeight, false);
 
+btn.addEventListener("keydown", function(e)
+{
+   if(e.keyCode === 13) // The Enter/Return key
+   { 
+    changeHeight();
+   }
+}, false);
+
 function changeHeight(e)
 {
      if(buttonCounter === 0)
@@ -57,17 +65,13 @@ function changeHeight(e)
         {
             if(window.innerWidth > 862 && window.innerWidth < 1280 )
                 {
-                  //  entry(0, 200, 0, "right");
-                  //  entry(0, 0-200, 1, "left");
                     entry(0, 400, 0, "right", 1);
                     entry(0 , 0-200, 1, "left", 1);
-                    /*change("none", "0", "0px", "2550px", "2300px", "load more", 0);*/
                 }
             else if(window.innerWidth < 861)
                 {
                     entry(0, 400, 0, "right", 1);
                     entry(0 , 0-200, 1, "left", 1);
-                    /*change("none", "0", "0px", "3050px", "2720px", "load more", 0);*/
                 }
             else
                 {
