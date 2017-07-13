@@ -23,15 +23,12 @@ h1,h2
 {
     position: absolute;
     left: -50000px;
-/*    top: -55px;*/
 }
 
 header
 {
     height: 660px;
     margin-top: 25px;
-    margin-left: auto;
-    margin-right: auto;
     background: url(../images/header.jpg) no-repeat;
     background-size: 100% 660px;
     color: #ffffff;
@@ -168,7 +165,7 @@ section:nth-of-type(1)
 {
     height: 285px;
     width: 100%;
-     padding-top: 140px;
+    padding-top: 140px;
 }
 
 section:nth-of-type(1) h2
@@ -189,24 +186,20 @@ section:nth-of-type(1)   p:nth-of-type(2)
 }
 
 article:nth-of-type(1)
-{
-    
-    height: 1514px;
-   /* height: 1909px;*/
-    
+{  
+    height: 1514px; 
 }
 
 article:nth-of-type(1) h2:first-of-type
 {
     position: absolute;
-  top: 1050px;
+    top: 1050px;
 }
 
 #worksWrapper
 {
     padding-top: 52px;
     min-height: 1152px;
-   /* height: 1547px;*/
     display: flex;
     justify-content: space-between;
     flex-direction: row; 
@@ -233,7 +226,6 @@ article:nth-of-type(1) h2:first-of-type
 
 #addonDown
 {
-   /* height: 394px;*/
     height: 0px;
     width: 1230px;
     display: none; 
@@ -242,24 +234,40 @@ article:nth-of-type(1) h2:first-of-type
     overflow: hidden;
     justify-content: center;
 }
-    
-.type1:nth-child(1)
+
+.blockType
 {
-    width: 765px;
-    height: 370px;
-    background: url(../images/nature.jpg);
     display: flex;
     -webkit-align-items: center;
     -ms-flex-align: center;
-     -webkit-transition: background 1s ;
-    transition: background 1s;
+}
+
+.blockType1
+{
+    width: 765px;
+    height: 370px;
+}
+
+.blockType2
+{
+    width: 370px;
+    height: 363px;
+}
+
+.blockType3
+{
+    width: 440px;
+    height: 369px;
+}
+    
+.type1:nth-child(1)
+{
+    background: url(../images/nature.jpg);
 }
 
 .type1:nth-child(1):hover
 {
     background:linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(../images/nature.jpg);
-      -webkit-transition: background 1s ;
-    transition: background 1s;
 }
 
 .type2Wrapper
@@ -272,12 +280,7 @@ article:nth-of-type(1) h2:first-of-type
 
 .type2
 {
-    width: 370px;
-    height: 363px;
     background: url(../images/people.jpg);
-    display: flex;
-    -webkit-align-items: center;
-    -ms-flex-align: center;
 }
 
 .type2:hover
@@ -298,13 +301,8 @@ article:nth-of-type(1) h2:first-of-type
 
 .type1:nth-child(3)
 {
-    width: 765px;
-    height: 369px;
     margin-top: 25px;
     background: url(../images/architecture.jpg);
-    display: flex;
-    -webkit-align-items: center;
-    -ms-flex-align: center;
 }
 
 .type1:nth-child(3):hover
@@ -312,15 +310,32 @@ article:nth-of-type(1) h2:first-of-type
     background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(../images/architecture.jpg);
 }
 
+.type3
+{
+    width: 440px;
+    height: 758px;
+    background: url(../images/urban.jpg);
+}
+
+.type3:hover
+{
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(../images/urban.jpg);
+}
+
+.type4
+{
+    margin-top: 25px;
+    background: url(../images/animals.jpg);
+}
+
+.type4:hover
+{
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(../images/animals.jpg);
+}
+
 .type5
 {
-    width: 765px;
-    height: 369px;
     background: url(../images/car.jpg);
-    display: flex;
-    opacity: 0;
-    -webkit-align-items: center;
-    -ms-flex-align: center;
 }
 
 .type5:hover
@@ -331,14 +346,13 @@ article:nth-of-type(1) h2:first-of-type
 
 .type6
 {
-    width: 440px;
-    height: 369px;
     background: url(../images/toast.jpg);
-    display: none;
-    opacity: 0;
-    -webkit-align-items: center;
-    -ms-flex-align: center; 
     margin-left: 25px;
+}
+
+.type6:hover
+{
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(../images/toast.jpg);
 }
 
 .cornerBorder
@@ -452,42 +466,6 @@ article:nth-of-type(1) h2:first-of-type
 {
     width: 200px;
 } 
-
-.type3
-{
-    width: 440px;
-    height: 758px;
-    background: url(../images/urban.jpg);
-    display: flex;
-    -webkit-align-items: center;
-    -ms-flex-align: center;
-}
-
-.type3:hover
-{
-    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(../images/urban.jpg);
-}
-
-.type4
-{
-    margin-top: 25px;
-    width: 440px;
-    height: 369px;
-    background: url(../images/animals.jpg);
-    display: flex;
-    -webkit-align-items: center;
-    -ms-flex-align: center;
-}
-
-.type4:hover
-{
-    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(../images/animals.jpg);
-}
-
-.type6:hover
-{
-    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(../images/toast.jpg);
-}
 
 #btn
 {
@@ -607,9 +585,6 @@ article:nth-of-type(2)
 .blackLine1
 {
     background: url(../images/BlackLine.png) no-repeat;
-    width: 100%;
-    height: 81px;
-    background-position: center;
     transform: translate(-123.5px, 65px);
     padding-bottom: 140px;
 }
@@ -617,12 +592,15 @@ article:nth-of-type(2)
 .blackLine2
 {
     background: url(../images/BlackLine2.png) no-repeat;
-    width: 100%;
-    height: 81px;
-    background-position: center; 
     transform: translate(0px,-34px);
 }
 
+.blackLine
+{
+    width: 100%;
+    height: 81px;
+    background-position: center;
+}
 
 article:nth-of-type(2) > .playWrapper > div
 {
@@ -644,13 +622,17 @@ article:nth-of-type(2) > .playWrapper > div
     background-position: 50% 50%;
 }
 
-.playWrapper > div:before
+.playWrapper > div:before,.playWrapper > div:after,.playWrapper span:before,.playWrapper span:after
 {
     display: block;
     position: absolute;
     content: "";
     height: 16px;
     width: 16px;
+}
+
+.playWrapper > div:before
+{
     left: 0px;
     top: 0px;
     border-top: 1px solid #000;
@@ -659,11 +641,6 @@ article:nth-of-type(2) > .playWrapper > div
 
 .playWrapper > div:after
 {
-    display: block;
-    position: absolute;
-    content: "";
-    height: 16px;
-    width: 16px;
     top: 0px;
     right: 0px;
     border-right: 1px solid #000;
@@ -672,11 +649,6 @@ article:nth-of-type(2) > .playWrapper > div
 
 .playWrapper span:before
 {
-    display:block;
-    position: absolute;
-    content:"";
-    height: 16px;
-    width: 16px;
     right: 0;
     bottom: 0;
     border-bottom: 1px solid #000;
@@ -685,11 +657,6 @@ article:nth-of-type(2) > .playWrapper > div
 
 .playWrapper span:after
 {
-    display:block;
-    position: absolute;
-    content:"";
-    height: 16px;
-    width: 16px;
     left: 0px;
     bottom: 0px;
     border-bottom: 1px solid #000;
@@ -777,7 +744,7 @@ article:nth-of-type(3) > .textHeader
 .pinterestHover
 {
     background: url(../icons/pinerestW.png) no-repeat;
-    background-color: #e6b5b5;
+  
 }
 
 .instagramSpan
@@ -789,7 +756,7 @@ article:nth-of-type(3) > .textHeader
 .instagramHover
 {
     background: url(../icons/instagramW.png) no-repeat;
-    background-color: #e6b5b5;
+   
 }
 
 .twitterSpan
@@ -800,7 +767,7 @@ article:nth-of-type(3) > .textHeader
 .twitterHover
 {
     background: url(../icons/twitterW.png) no-repeat;
-    background-color: #e6b5b5;
+    
 }
 
 .googleSpan
@@ -811,7 +778,7 @@ article:nth-of-type(3) > .textHeader
 .googleHover
 {
     background: url(../icons/googleW.png) no-repeat;
-    background-color: #e6b5b5;
+    
 }
 
 .tumblrSpan
@@ -822,8 +789,14 @@ article:nth-of-type(3) > .textHeader
 .tumblrHover
 {
     background: url(../icons/tumblrW.png) no-repeat;
-    background-color: #e6b5b5;
+    
 }
+
+.pinterestHover, .instagramHover, .twitterHover, .googleHover, .tumblrHover
+{
+    background-color: #e6b5b5;    
+}
+
 
 section:nth-of-type(3)
 {
